@@ -16,19 +16,25 @@ using namespace std;
 // 	naam="DR."+naam;
 // 	cout<<"\n2.Welcome to CDAC: "<<naam<<" address is:"<<&naam;
 // }
-void sp(int &a, int &b){
+void sp(int &a){
     // a = a^b;
     // b = a^b;
     // a = a^b;
-    swap(a, b);
-    cout<<"after swap in fuction"<<a <<" "<<b<<endl;
+    // int sum  = a + b;
+    int fact = 1;
+    for(int i=1; i<=a; i++){
+        fact *= i;
+    }
+    // cout<<"after swap in fuction"<<a <<" "<<b<<endl;
+    cout<<fact<<endl;
 }
 
 int main()
 {
     int a, b;
-    cin>>a>>b;
-    sp(a,b);
-     cout<<"after swap in fuction"<<a <<" "<<b<<endl;
+    // cin>>a>>b;
+    cin>>a;
+    sp(a);
+    //  cout<<"after swap in fuction"<<a <<" "<<b<<endl;
 }
 
