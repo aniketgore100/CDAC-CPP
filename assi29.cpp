@@ -1,5 +1,4 @@
 //9. Sum of diagonal elements
-// 8. Search a number in an array
 #include <bits/stdc++.h>
 using namespace std;
 

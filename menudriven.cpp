@@ -31,6 +31,24 @@
 //     cout<<tcount*10 + tcoffee * 40 + twater * 10<<endl;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     switch(n){
+//         case 1: cout<<"monday"<<endl;
+//         break;
+
+//         default:
+//           cout<<"not day selected"<<endl;
+//           break;
+//     }
+// }
+
+
+
 
 
 
@@ -80,26 +98,26 @@
 // }
 
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main(){
-    int n;
-    cin>>n;
-    int revno = n;
-    int  rem  = 0, rev=0;
-    while(n!=0){
-       rem = n % 10;
-       n = n /10;
-       rev = rev * 10 + rem;
+// int main(){
+//     int n;
+//     cin>>n;
+//     int revno = n;
+//     int  rem  = 0, rev=0;
+//     while(n!=0){
+//        rem = n % 10;
+//        n = n /10;
+//        rev = rev * 10 + rem;
        
-    }
-    cout<<rev<<endl;
-    if(revno == rev){
-        cout<<"armstrng"<<endl;
-    }
-    else{
-        cout<<"not"<<endl;
-    }
-    // cout<<sum<<endl;
-}
+//     }
+//     cout<<rev<<endl;
+//     if(revno == rev){
+//         cout<<"armstrng"<<endl;
+//     }
+//     else{
+//         cout<<"not"<<endl;
+//     }
+//     // cout<<sum<<endl;
+// }
