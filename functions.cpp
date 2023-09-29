@@ -1,40 +1,61 @@
-#include <bits/stdc++.h>
+//Wap to calculate bio where bio=n! /(r!*(n-r)!)
+//r,n are natural numbers.
+//Use functions bio ()
+#include <iostream>
 using namespace std;
-// pass by value 
-
-// void welcome(string naam)//body--code
+// int fact(int no)
 // {
-// 	cout<<"\n1.Welcome to CDAC: "<<naam<<" address:"<<&naam;
-// 	naam="DR."+naam;
-// 	cout<<"\n2.Welcome to CDAC: "<<naam<<" address:"<<&naam;
+// 	int product=1,i;
+// 	for (i=1;i<=no;i++)
+// 	  {
+// 	  	 product*=i;
+// 	  }
+// 	return product;
+// }
+//  float bio(int n,int r)
+//  {
+//  	//bio=n! /(r!*(n-r)!)
+//  	float ans=(float)fact(n)/(fact(r)*fact(n-r));
+//  	return ans;
+//  }
+
+// int pow(int x, int n){
+//    if(n==1)
+//    return 1;
+//    else 
+//    return x*x*x;
+//    pow(x, n-1);
+    
 // }
 
-// // pass my reference
-// void welcome2(string &naam)//body--code refence &
-// {
-// 	cout<<"\n1.Welcome to CDAC: "<<naam<<" address is:"<<&naam;
-// 	naam="DR."+naam;
-// 	cout<<"\n2.Welcome to CDAC: "<<naam<<" address is:"<<&naam;
+// int gcd(int a, int b){
+//     if(a%b == 0)
+//     return b;
+//     else{
+//        return gcd(a, a%b);
+//     }
 // }
-void sp(int &a){
-    // a = a^b;
-    // b = a^b;
-    // a = a^b;
-    // int sum  = a + b;
-    int fact = 1;
-    for(int i=1; i<=a; i++){
-        fact *= i;
-    }
-    // cout<<"after swap in fuction"<<a <<" "<<b<<endl;
-    cout<<fact<<endl;
+int fib(int n)
+{
+    if (n <= 1)
+        return n;
+    return fib(n - 1) + fib(n - 2);
 }
 
 int main()
 {
-    int a, b;
-    // cin>>a>>b;
-    cin>>a;
-    sp(a);
-    //  cout<<"after swap in fuction"<<a <<" "<<b<<endl;
+	// int n,r;
+	// cout<<"Enter n and r:\n";
+	// cin>>n>>r;
+	// cout<<"Bio is:"<<bio(n,r);
+    // int a,b,c,d;
+    // cin>> a>>b>>c>>d;
+    // // int min = minimum(a,b);
+    // // int min2 = minimum(c,d);
+    // // int result = minimum(min, min2);
+    // cout<<result<<endl;
+    // cout<<minimum(minimum(a,b), minimum(c,d))<<endl;
+    int n;
+    cin>>n;
+    cout<<fib(n)<<endl;
 }
-
