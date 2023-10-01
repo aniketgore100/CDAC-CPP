@@ -9,10 +9,10 @@ int main(){
     int upc = 0, lwc = 0;
     for(int i=0; i<n; i++){
         if(str[i] >='a' && str[i] <= 'z'){
-            upc++;
+            lwc++;
         }
         else{
-            lwc++;
+            upc++;
         }
     }
     cout<<upc<<" "<<lwc<<endl;
