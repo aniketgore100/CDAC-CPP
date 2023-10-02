@@ -22,7 +22,7 @@ public:
         }
     }
 
-    string getname() const {
+    string getname() const {  
         return name;
     }
 
@@ -34,6 +34,7 @@ public:
     int updated_amount;
     int flag2 = 0;
     int withamount = 0;
+    
     void updated(float amt) {
         updated_amount = amt;
         amount = updated_amount;
@@ -65,13 +66,13 @@ public:
 int Bank::ACN = 345609000;
 
 void createAccount(Bank &b) {
-    string str;
+    string name;
     cout << "Enter Name: ";
-    cin >> str;
+    cin >> name;
     float amount;
     cout << "Please Enter an amount. *Note: Amount should be greater than 3000: ";
     cin >> amount;
-    b.setValues(str, amount);
+    b.setValues(name, amount);
     cout << endl;
     b.display();
 }
@@ -141,8 +142,7 @@ void BankMenu() {
         cin >> option;
 
         switch (option) {
-        int accNum;
-        cin>>accNum;
+       
         case 1:
             createAccount(account);
             break;
